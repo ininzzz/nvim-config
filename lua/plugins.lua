@@ -14,6 +14,7 @@ return require('packer').startup(function(use)
     use { 'lewis6991/gitsigns.nvim' }
     use { 'windwp/nvim-autopairs' }
     use { 'akinsho/toggleterm.nvim', tag = '*' }
+    use { 'feline-nvim/feline.nvim' }
     -- lsp
     use { "williamboman/mason.nvim" }
     use { "williamboman/mason-lspconfig.nvim" }
