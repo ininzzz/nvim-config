@@ -38,4 +38,6 @@ require('lspconfig')['gopls'].setup{
 require('lspconfig')['sumneko_lua'].setup{
     on_attach = on_attach,
 }
-
+require('lspconfig')['clangd'].setup{
+    on_attach = on_attach,
+}

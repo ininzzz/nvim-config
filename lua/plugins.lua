@@ -5,9 +5,15 @@ return require('packer').startup(function(use)
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
     use { 'nvim-tree/nvim-tree.lua' }
     use { 'nvim-tree/nvim-web-devicons' }
-    use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'kyazdani42/nvim-web-devicons' }
+    use { 'akinsho/bufferline.nvim', tag = 'v3.*', requires = 'kyazdani42/nvim-web-devicons' }
     use { 'nvim-telescope/telescope.nvim', tag = '0.1.0', requires = 'nvim-lua/plenary.nvim' }
     use { 'navarasu/onedark.nvim' }
+    use { 'numToStr/Comment.nvim' }
+    use { 'goolord/alpha-nvim', requires = 'kyazdani42/nvim-web-devicons' }
+    use { 'famiu/bufdelete.nvim' }
+    use { 'lewis6991/gitsigns.nvim' }
+    use { 'windwp/nvim-autopairs' }
+    use { 'akinsho/toggleterm.nvim', tag = '*' }
     -- lsp
     use { "williamboman/mason.nvim" }
     use { "williamboman/mason-lspconfig.nvim" }
