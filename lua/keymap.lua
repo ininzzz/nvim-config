@@ -42,12 +42,18 @@ map('n', '<S-Right>', '<cmd>BufferLineCycleNext<cr>', opts)
 
 -- Comment
 map('n', '<leader>/', '<cmd>lua require("Comment.api").toggle.linewise.current()<cr>', opts)
+map('v', '<leader>/', '<esc><cmd>lua require("Comment.api").toggle.linewise(vim.fn.visualmode())<cr>', opts)
+
+-- GitSigns
+map('n', '<leader>gd', '<cmd>Gitsigns diffthis<cr>', opts)
+map('n', '<leader>gh', '<cmd>Gitsigns reset_hunk<cr>', opts)
+map('n', '<leader>gb', '<cmd>Gitsigns reset_buffer<cr>', opts)
+map('n', '<leader>gs', '<cmd>Gitsigns stage_buffer<cr>', opts)
+map('n', '<leader>gu', '<cmd>Gitsigns undo_stage_hunk<cr>', opts)
 
 -- Toggleterm
 map('n', '<F7>', '<cmd>ToggleTerm<cr>', opts)
 map('t', '<F7>', '<cmd>ToggleTerm<cr>', opts)
-
-
 
 map('n', 'nt', ':NvimTreeToggle<CR>', opts)
 

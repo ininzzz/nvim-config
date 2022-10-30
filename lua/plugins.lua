@@ -7,7 +7,6 @@ return require('packer').startup(function(use)
     use { 'nvim-tree/nvim-web-devicons' }
     use { 'akinsho/bufferline.nvim', tag = 'v3.*', requires = 'kyazdani42/nvim-web-devicons' }
     use { 'nvim-telescope/telescope.nvim', tag = '0.1.0', requires = 'nvim-lua/plenary.nvim' }
-    use { 'navarasu/onedark.nvim' }
     use { 'numToStr/Comment.nvim' }
     use { 'goolord/alpha-nvim', requires = 'kyazdani42/nvim-web-devicons' }
     use { 'famiu/bufdelete.nvim' }
@@ -15,10 +14,13 @@ return require('packer').startup(function(use)
     use { 'windwp/nvim-autopairs' }
     use { 'akinsho/toggleterm.nvim', tag = '*' }
     use { 'feline-nvim/feline.nvim' }
+    use { 'glepnir/dashboard-nvim' }
     -- lsp
-    use { "williamboman/mason.nvim" }
-    use { "williamboman/mason-lspconfig.nvim" }
-    use { "neovim/nvim-lspconfig" }
+    use { 'williamboman/mason.nvim' }
+    use { 'williamboman/mason-lspconfig.nvim' }
+    use { 'neovim/nvim-lspconfig' }
+    use { 'folke/lsp-colors.nvim'}
+    use { 'folke/trouble.nvim' }
     -- nvim-cmp
     use { 'hrsh7th/cmp-nvim-lsp' }
     use { 'hrsh7th/cmp-buffer' }
@@ -31,4 +33,7 @@ return require('packer').startup(function(use)
     use { 'rafamadriz/friendly-snippets' }
     -- lspkind
     use { 'onsails/lspkind-nvim' }
+    -- theme
+    use { 'arcticicestudio/nord-vim'}
+    use { 'navarasu/onedark.nvim' }
 end)
