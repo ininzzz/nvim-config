@@ -1,39 +1,41 @@
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
-return require('packer').startup(function(use)
-    use { 'wbthomason/packer.nvim' }
-    use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
-    use { 'nvim-tree/nvim-tree.lua' }
-    use { 'nvim-tree/nvim-web-devicons' }
-    use { 'akinsho/bufferline.nvim', tag = 'v3.*', requires = 'kyazdani42/nvim-web-devicons' }
-    use { 'nvim-telescope/telescope.nvim', tag = '0.1.0', requires = 'nvim-lua/plenary.nvim' }
-    use { 'numToStr/Comment.nvim' }
-    use { 'goolord/alpha-nvim', requires = 'kyazdani42/nvim-web-devicons' }
-    use { 'famiu/bufdelete.nvim' }
-    use { 'lewis6991/gitsigns.nvim' }
-    use { 'windwp/nvim-autopairs' }
-    use { 'akinsho/toggleterm.nvim', tag = '*' }
-    use { 'feline-nvim/feline.nvim' }
-    use { 'glepnir/dashboard-nvim' }
-    -- lsp
-    use { 'williamboman/mason.nvim' }
-    use { 'williamboman/mason-lspconfig.nvim' }
-    use { 'neovim/nvim-lspconfig' }
-    use { 'folke/lsp-colors.nvim'}
-    use { 'folke/trouble.nvim' }
-    -- nvim-cmp
-    use { 'hrsh7th/cmp-nvim-lsp' }
-    use { 'hrsh7th/cmp-buffer' }
-    use { 'hrsh7th/cmp-path' }
-    use { 'hrsh7th/cmp-cmdline' }
-    use { 'hrsh7th/nvim-cmp' }
-    -- vsnip
-    use { 'hrsh7th/cmp-vsnip' }
-    use { 'hrsh7th/vim-vsnip' }
-    use { 'rafamadriz/friendly-snippets' }
-    -- lspkind
-    use { 'onsails/lspkind-nvim' }
-    -- theme
-    use { 'arcticicestudio/nord-vim'}
-    use { 'navarasu/onedark.nvim' }
+return require("packer").startup(function(use)
+	use({ "wbthomason/packer.nvim" })
+	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
+	use({ "nvim-tree/nvim-tree.lua" })
+	use({ "nvim-tree/nvim-web-devicons" })
+	use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "kyazdani42/nvim-web-devicons" })
+	use({ "nvim-telescope/telescope.nvim", tag = "0.1.0", requires = "nvim-lua/plenary.nvim" })
+	use({ "numToStr/Comment.nvim" })
+	use({ "goolord/alpha-nvim", requires = "kyazdani42/nvim-web-devicons" })
+	use({ "famiu/bufdelete.nvim" })
+	use({ "lewis6991/gitsigns.nvim" })
+	use({ "windwp/nvim-autopairs" })
+	use({ "akinsho/toggleterm.nvim", tag = "*" })
+	use({ "feline-nvim/feline.nvim" })
+	use({ "glepnir/dashboard-nvim" })
+	use({ "folke/neodev.nvim" })
+	use({ "jose-elias-alvarez/null-ls.nvim" })
+	-- lsp
+	use({ "williamboman/mason.nvim" })
+	use({ "williamboman/mason-lspconfig.nvim" })
+	use({ "neovim/nvim-lspconfig" })
+	use({ "folke/lsp-colors.nvim" })
+	use({ "folke/trouble.nvim" })
+	-- nvim-cmp
+	use({ "hrsh7th/cmp-nvim-lsp" })
+	use({ "hrsh7th/cmp-buffer" })
+	use({ "hrsh7th/cmp-path" })
+	use({ "hrsh7th/cmp-cmdline" })
+	use({ "hrsh7th/nvim-cmp" })
+	-- vsnip
+	use({ "hrsh7th/cmp-vsnip" })
+	use({ "hrsh7th/vim-vsnip" })
+	use({ "rafamadriz/friendly-snippets" })
+	-- lspkind
+	use({ "onsails/lspkind-nvim" })
+	-- theme
+	use({ "arcticicestudio/nord-vim" })
+	use({ "navarasu/onedark.nvim" })
 end)
