@@ -17,6 +17,7 @@ return require("packer").startup(function(use)
 	use({ "glepnir/dashboard-nvim" })
 	use({ "folke/neodev.nvim" })
 	use({ "jose-elias-alvarez/null-ls.nvim" })
+	use({ "kylechui/nvim-surround", tag = "*" })
 	-- lsp
 	use({ "williamboman/mason.nvim" })
 	use({ "williamboman/mason-lspconfig.nvim" })

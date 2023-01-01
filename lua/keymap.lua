@@ -19,6 +19,9 @@ map("t", "<C-Right>", "<C-\\><C-n><C-w>l", opts)
 map("t", "<C-Down>", "<C-\\><C-n><C-w>j", opts)
 map("t", "<C-Up>", "<C-\\><C-n><C-w>k", opts)
 
+map("n", "<A-Down>", ":move .+1<CR>", opts)
+map("n", "<A-Up>", ":move .-2<CR>", opts)
+
 map("n", "vs", ":vsplit<CR>", opts)
 
 map("n", "<C-h>", ":vertical resize -2<CR>", opts)
