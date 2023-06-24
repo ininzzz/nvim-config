@@ -1,6 +1,6 @@
 return {
 	"famiu/bufdelete.nvim",
 	keys = {
-		{ "<leader>q", ":Bdelete<CR>", mode = "n" },
+		{ "<leader>q", ":Bdelete<CR>", mode = "n", silent = true },
 	}
 }
