@@ -26,6 +26,7 @@
         "/Users/zhujie/.local/share/nvim/lazy/nvim-autopairs/lua",
         "/Users/zhujie/.local/share/nvim/lazy/LuaSnip/lua",
         "/Users/zhujie/.config/nvim/lua",
-        "${3rd}/luv/library"
+        "${3rd}/luv/library",
+        "${3rd}/luassert/library"
     ]
 }
