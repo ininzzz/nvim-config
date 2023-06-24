@@ -33,9 +33,6 @@ return {
 
 	end,
 	keys = {
-		{ "gd",        vim.lsp.buf.definition,     mode = "n", silent = true },
-		{ "gi",        vim.lsp.buf.implementation, mode = "n", silent = true },
-		{ "gr",        vim.lsp.buf.references,     mode = "n", silent = true },
 		{ "<F2>",      vim.lsp.buf.rename,         mode = "n", silent = true },
 		{ "<leader>c", vim.lsp.buf.code_action,    mode = "n", silent = true },
 		{ "<leader>k", vim.lsp.buf.hover,          mode = "n", silent = true },

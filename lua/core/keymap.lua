@@ -8,6 +8,10 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 
+keymap("n", "<C-a>", "ggVG", opts)
+keymap("n", "J", "5j", opts)
+keymap("n", "K", "5k", opts)
+
 keymap("n", "<C-s>", "<cmd>w<cr>", opts)
 
 keymap("n", "<A-Down>", "<cmd>move .+1<cr>", opts)
