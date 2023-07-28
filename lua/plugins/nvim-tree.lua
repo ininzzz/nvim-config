@@ -2,6 +2,6 @@ return {
 	"nvim-tree/nvim-tree.lua",
 	opts = {},
 	keys = {
-		{ "<leader>nt", ":NvimTreeToggle<CR>", mode = "n", silent = true },
+		{ "<leader>e", ":NvimTreeToggle<CR>", mode = "n", silent = true },
 	}
 }

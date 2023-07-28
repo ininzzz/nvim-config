@@ -2,12 +2,6 @@ return {
 	"folke/noice.nvim",
 	event = "VeryLazy",
 	config = function(_, opts)
-		require('notify').setup(vim.tbl_extend('keep', {
-			timeout = 1000,
-			background_colour = "#000000",
-			max_width = 50,
-			max_height = 30,
-		}, opts))
 		require("noice").setup(opts)
 	end,
 	opts = {
@@ -25,6 +19,5 @@ return {
 	},
 	dependencies = {
 		"MunifTanjim/nui.nvim",
-		"rcarriga/nvim-notify"
 	}
 }

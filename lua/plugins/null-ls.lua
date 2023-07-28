@@ -8,7 +8,9 @@ return {
 				null_ls.builtins.formatting.goimports,
 				null_ls.builtins.formatting.goimports_reviser,
 				null_ls.builtins.formatting.prettier,
+				null_ls.builtins.formatting.buf,
 				null_ls.builtins.code_actions.gomodifytags,
+				null_ls.builtins.diagnostics.protolint,
 			},
 		}
 	end,

@@ -2,17 +2,17 @@ return {
 	"hrsh7th/nvim-cmp",
 	event = { "InsertEnter" },
 	dependencies = {
+		"onsails/lspkind.nvim",
 		"hrsh7th/cmp-nvim-lsp",
 		"hrsh7th/cmp-buffer",
 		"hrsh7th/cmp-path",
 		"hrsh7th/cmp-path",
 		"hrsh7th/cmp-vsnip",
 		"hrsh7th/vim-vsnip",
-		-- "saadparwaiz1/cmp_luasnip",
-		-- "L3MON4D3/LuaSnip",
 	},
 	opts = function()
 		local cmp = require("cmp")
+		local lspkind = require("lspkind")
 
 		-- insert pair after select function or mathod item
 		local cmp_autopirs = require('nvim-autopairs.completion.cmp')
@@ -35,6 +35,13 @@ return {
 				["<Tab>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Select }),
 				["<S-Tab>"] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Select }),
 			}),
+			formatting = {
+				format = lspkind.cmp_format({
+					mode = 'symbol_text',
+					maxwidth = 50,
+					ellipsis_char = '...',
+				}),
+			},
 		}
 	end
 }
